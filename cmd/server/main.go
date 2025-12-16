@@ -11,7 +11,8 @@ import (
 	"internal/tools"
 	"github.com/dheeraj-sn/mcp-go/internal/mcp"
 	"github.com/dheeraj-sn/mcp-go/internal/middleware"
-	"github.com/dheeraj-sn/mcp-go/internal/domain/limiter"	
+	"github.com/dheeraj-sn/mcp-go/internal/domain/limiter"
+	"github.com/dheeraj-sn/mcp-go/internal/tools"
 )
 
 func main() {

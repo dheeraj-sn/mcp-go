@@ -3,9 +3,9 @@ package limiter
 import "context"
 
 type Service interface {
-	CreateLimit(ctx context.Context, key string, amount int) error
-	GetLimit(ctx context.Context, key string) (int, error)
-	DeleteLimit(ctx context.Context, key string) error
+	Create(ctx context.Context, key string, limit int) (int, error)
+	Get(ctx context.Context, key string) (int, error)
+	Delete(ctx context.Context, key string) error
 }
 
 func NewService() Service {
@@ -15,14 +15,17 @@ func NewService() Service {
 type service struct {
 }
 
-func (s *service) CreateLimit(ctx context.Context, key string, amount int) error {
-	return nil
-}
-
-func (s *service) GetLimit(ctx context.Context, key string) (int, error) {
+func (s *service) Create(ctx context.Context, key string, limit int) (int, error) {
+	// TODO: Implement
 	return 0, nil
 }
 
-func (s *service) DeleteLimit(ctx context.Context, key string) error {
+func (s *service) Get(ctx context.Context, key string) (int, error) {
+	// TODO: Implement
+	return 0, nil
+}
+
+func (s *service) Delete(ctx context.Context, key string) error {
+	// TODO: Implement
 	return nil
 }
