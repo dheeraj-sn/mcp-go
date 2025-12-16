@@ -19,7 +19,7 @@
     }
 }
 ```
-## Response
+## Success Response
 ```
 {
     "request_id": "req-123",
@@ -29,6 +29,19 @@
     "meta": {
         "trace_id": "trace-xyz",
         "retryable": true
+    }
+}
+```
+## Error Response
+```
+{
+    "request_id": "req-123",
+    "error": {
+        "code": "INVALID_INPUT",
+        "message": "limit must be > 0"
+    },
+    "meta": {
+        "retryable": false
     }
 }
 ```
